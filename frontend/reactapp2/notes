@@ -1,0 +1,23 @@
+yarn start
+yarn build
+yarn test
+yarn eject
+
+
+React ready made widgets - https://bit.dev/bondz/react-epic-spinners
+                           https://github.com/teambit/bit
+
+
+
+
+Run instructions for iOS:
+    • cd C:\Users\MARTIN~1\AppData\Local\Temp\1562849059623-0\reactapp2 && react-native run-ios
+    - or -
+    • Open ios\reactapp2.xcodeproj in Xcode or run "xed -b ios"
+    • Hit the Run button
+
+  Run instructions for Android:
+    • Have an Android emulator running (quickest way to get started), or a device connected.
+    • cd C:\Users\MARTIN~1\AppData\Local\Temp\1562849059623-0\reactapp2 && react-native run-android
+
+

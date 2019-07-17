@@ -1,0 +1,57 @@
+{
+  "name": "reactapp2",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "react-native start",
+    "start-web": "react-scripts start",
+    "test": "jest",
+    "lint": "eslint .",
+    "android-windows": "react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res && react-native run-android",
+    "postinstall": "jetify"
+  },
+  "dependencies": {
+    "@react-native-community/cli-platform-android": "^2.5.0",
+    "babel-loader": "^8.0.5",
+    "expo-cli": "^2.21.2",
+    "g": "^2.0.1",
+    "react": "16.8.6",
+    "react-art": "^16.8.6",
+    "react-native": "0.55.4",
+    "react-native-gesture-handler": "^1.3.0",
+    "react-native-router-flux": "^4.0.6",
+    "react-native-web": "^0.11.5",
+    "react-native-web-storage": "^0.2.2",
+    "react-navigation": "^3.11.1",
+    "react-redux": "^7.1.0",
+    "react-scripts": "^3.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.4",
+    "@babel/runtime": "^7.5.4",
+    "@react-native-community/eslint-config": "^0.0.5",
+    "@types/react-native": "0.55.4",
+    "@types/react-router-dom": "4.3.1",
+    "@types/react-router-native": "4.2.4",
+    "babel-jest": "^24.8.0",
+    "eslint": "^5.16.0",
+    "jest": "^24.8.0",
+    "metro-react-native-babel-preset": "^0.55.0",
+    "react-test-renderer": "16.8.6"
+  },
+  "jest": {
+    "preset": "react-native"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
