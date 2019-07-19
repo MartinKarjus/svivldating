@@ -8,6 +8,8 @@
 
 
 <script>
+  import router from '../../router'
+
   export default {
     name: "Location",
     methods: {

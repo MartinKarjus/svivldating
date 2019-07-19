@@ -2,6 +2,9 @@
   <v-container text-xs-center>
     <div>
       <h1>Home</h1>
+      <div>
+        8
+      </div>
     </div>
   </v-container>
 </template>
