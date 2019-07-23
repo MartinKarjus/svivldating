@@ -1,24 +1,24 @@
 <template>
   <div>
-    <h1>UsernamePasswordEmail</h1>
-    <input v-model="firstname" placeholder="First name">
+    <h1>Sign up</h1>
+    <input v-model="firstname" placeholder="First name" class="form-control" >
     <br>
-    <input v-model="lastname" placeholder="Last name">
+    <input v-model="lastname" placeholder="Last name" class="form-control" >
     <br>
-    <input v-model="eMail" placeholder="Email">
+    <input v-model="eMail" placeholder="Email" class="form-control" >
     <br>
-    <input v-model="password" placeholder="Password">
+    <input v-model="password" placeholder="Password" class="form-control" >
     <br>
-    <button v-on:click="confirm">Confirm</button>
+    <button v-on:click="confirm" class="btn-lg btn">Confirm</button>
     <br>
-    <button v-on:click="back">Back</button>
+    <button v-on:click="back" class="btn btn-lg">Back</button>
     <br>
     <span>{{ error }}</span>
   </div>
 </template>
 
 
-<script>
+  <script>
   import router from '../../router'
   import axios from 'axios'
 

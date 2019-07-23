@@ -1,12 +1,12 @@
 <template>
 
   <div>
-    <h1>GenderPicker</h1>
-    <span>I am a</span><br>
-    <button v-on:click="man">Man</button>
-    <button v-on:click="woman">Woman</button>
+    <h1>You are:</h1>
+    <div class="container"><button v-on:click="man" class="btn btn-lg btn-info" >Man</button>
+    <button v-on:click="woman" class="btn btn-lg btn-danger">Woman</button>
     <br>
-    <button v-on:click="back">Back</button>
+    </div>
+    <button v-on:click="back" class="btn btn-lg btn-dark">Back</button>
   </div>
 </template>
 

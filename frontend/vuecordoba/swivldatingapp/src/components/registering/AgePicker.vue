@@ -1,6 +1,6 @@
 <template>
     <div>
-      <h1>AgePicker</h1>
+      <h1>You are:</h1>
       <button v-on:click="back">Back</button>
 
       <form>

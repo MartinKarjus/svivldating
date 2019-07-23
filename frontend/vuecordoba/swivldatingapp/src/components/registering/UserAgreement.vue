@@ -15,7 +15,7 @@ Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC
         I accept the terms and conditions
       </label>
       <br>
-      <button v-on:click="confirm" :disabled='isDisabled'>Confirm</button>
+      <button v-on:click="confirm" :disabled='isDisabled' class="btn-lg btn">Confirm</button>
       <br>
     </div>
   </div>

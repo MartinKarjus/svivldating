@@ -1,15 +1,14 @@
 <template>
   <div>
     <div>
-      <h1>UserLoginRegister</h1>
-      <input v-model="email" placeholder="Email">
+      <h1>SWIVL.me</h1>
+      <input v-model="email" placeholder="Email"  class="form-control" >
       <br>
-      <input v-model="password" placeholder="Password">
+      <input v-model="password" placeholder="Password" class="form-control">
       <br>
 
-      <button v-on:click="login">Login</button>
-      <br>
-      <button v-on:click="register">Register</button>
+      <button v-on:click="login" type="button" class="btn btn-primary btn-lg">Login</button>
+      <button v-on:click="register"  type="button" class="btn btn-secondary btn-lg">Register</button>
 <!--      <datepicker :value="state.date"></datepicker>-->
     </div>
   </div>

@@ -9,8 +9,8 @@
     <br>
     <span>{{staticQuiz[0].question}}</span>
     <br>
-    <button v-on:click="choice1" :disabled='isDisabled'>{{staticQuiz[0].txt1}}</button>
-    <button v-on:click="choice2" :disabled='isDisabled'>{{staticQuiz[0].txt2}}</button>
+    <button v-on:click="choice1" :disabled='isDisabled' class="btn btn-success">{{staticQuiz[0].txt1}}</button>
+    <button v-on:click="choice2" :disabled='isDisabled' class="btn alert-danger">{{staticQuiz[0].txt2}}</button>
 
 
     <!--    <button v-on:click="confirm">Confirm</button>-->
