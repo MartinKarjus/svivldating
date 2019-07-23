@@ -1,14 +1,15 @@
 package swivl.demo.repository;
 
+import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
+import swivl.demo.entities.BrowserContent;
+import swivl.demo.entities.User;
+
+import java.util.List;
 
 @Repository
-public class UserRepository{
-
-    public boolean validUsernamePassword(String username, String password) {
-        //todo impl
-        return true;
-    }
-
+public interface UserRepository extends CrudRepository<User, Long> {
+List<User> findAllByAccessToken(String accessToken);
 
 }
+

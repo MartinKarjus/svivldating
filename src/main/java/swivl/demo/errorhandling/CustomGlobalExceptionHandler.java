@@ -1,4 +1,4 @@
-package swivl.demo.controller.errorhandling;
+package swivl.demo.errorhandling;
 
 
 import org.springframework.web.bind.annotation.ControllerAdvice;
