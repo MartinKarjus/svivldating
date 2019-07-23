@@ -1,23 +1,25 @@
 <template>
 
   <div>
-    <h1>GenderPicker</h1>
-    <span>I am a</span><br>
-    <button v-on:click="man">Man</button>
-    <button v-on:click="woman">Woman</button>
-    <br>
-    <button v-on:click="back">Back</button>
+    <div class="btn" style="background-color: lightcoral" @click="browser">
+      <i class="material-icons">Browser</i>
+    </div>
 
 
-    <ul id="example-1">
+    <h1>Your matches</h1>
+
+
+    <ul id="example-1" class="box2">
       <li v-for="item in items">
-        <div class="container boxmid">
+        <div class="container">
           <div class="row">
             <div class="col-xs-6 box">
-              {{ item.message }}
+              <img
+                :src="require(`../assets/images/${item.src}`)"
+                class="rounded-borders"/>
             </div>
             <div class="col-xs-6 box">
-              TWO
+              {{ item.message }}
             </div>
           </div>
         </div>
@@ -36,25 +38,15 @@
     data() {
       return {
         items: [
-          {message: "Foo"},
-          {message: "Bar"}
+          {message: "Foo", src: 'karina.jpg'},
+          {message: "Bar", src: 'alexander.jpg'}
         ]
       }
     },
     methods: {
-      back: function (event) {
-        router.push({name: "UsernamePasswordEmail"});
+      browser: function (event) {
+        router.push({name: "Browser"});
       },
-      registerGender(gender) {
-        this.$myStore.commit('registerOwnGender', gender)
-        router.push({name: "LookingFor"});
-      },
-      man: function (event) {
-        this.registerGender("man")
-      },
-      woman: function (event) {
-        this.registerGender("woman")
-      }
     }
   }
 </script>
@@ -72,6 +64,15 @@
     position: absolute;
     left: 50%;
     top: 50%;
+  }
+  .rounded-borders {
+    border-radius: 12px;
+    width: 150px;
+    height: 150px;
+  }
+  .box2 {
+    width: 500px;
+    height: 500px;
   }
 
 

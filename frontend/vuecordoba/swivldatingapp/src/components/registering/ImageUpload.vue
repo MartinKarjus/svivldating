@@ -53,7 +53,7 @@
       },
       confirm: function (event) {
         this.upload();
-        if(fd == null) {
+        if(this.fd == null) {
           this.error = "Please upload an image to continue."
         } else {
           this.error = ''
