@@ -5,14 +5,11 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    count: 0,
     registration: new Map(),
     accessToken: "",
+    loggedInUserDetails: new Map()
   },
   mutations: {
-    increment(state) {
-      state.count++
-    },
     setRegistrationField(state, userPass) {
       console.log('username ' + userPass["username"]);
       console.log('password ' + userPass["password"]);
@@ -33,9 +30,17 @@ export default new Vuex.Store({
       state.registration.set("lastname", userInfo["lastname"]);
       state.registration.set("password", userInfo["password"]);
       state.registration.set("email", userInfo["email"])
+    },
+    registerBirthDate(state, birthDate) {
+      state.registration.set("birthDate", birthDate)
+    },
+    registerImage(state, image) {
+      state.registration.set("img", image)
+    },
+    clearLogin(state) {
+      state.accessToken = null
+      state.loggedInUserDetails = new Map()
     }
-    
-
-  }
+  },
 
 })

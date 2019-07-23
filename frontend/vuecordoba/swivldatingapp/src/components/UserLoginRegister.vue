@@ -3,11 +3,13 @@
     <div>
       <h1>UserLoginRegister</h1>
       <input v-model="email" placeholder="Email">
+      <br>
       <input v-model="password" placeholder="Password">
+      <br>
 
       <button v-on:click="login">Login</button>
+      <br>
       <button v-on:click="register">Register</button>
-      <router-link to="usernamepasswordemail">FirstRoute</router-link>
 <!--      <datepicker :value="state.date"></datepicker>-->
     </div>
   </div>
@@ -35,27 +37,32 @@
           .then ((res)=> console.log (res.body))
           .catch ((error)=> console.log(error));*/
       login: function (event) {
-        this.validUsernamePassword()
-        //todo Change after endpoint done
+        if(this.validUsernamePassword()) {
+          router.push({name: "Quiz"});
+        } else {
+          error = "Invalid email or password"
+        }
       },
 
       validUsernamePassword() {
-        //todo impl
         return true;
+
+        //todo change after endpoint
+        // axios.post('http://localhost:8090/api/registration/checkEmailAvailable', {username: this.username,email: this.email})
+        //   .then(response => {
+        //     console.log(response.data)
+        //     console.log("returned uname,email:" + response.data["username"] + " " + response.data["email"])
+        //   })
+        //   .catch(e => {
+        //     console.log(e)
+        //   })
       },
 
       register: function (event) {
         router.push({ name: "UsernamePasswordEmail" });
+        //router.push({ name: "ImageUpload" });
+        //router.push({ name: "AccCreated" });
         this.validUsernamePassword()
-
-        //todo change after endpoint
-        axios.post('http://localhost:8090/temp', {username: this.username,password: this.password})
-          .then(response => {
-            console.log("is valid login:" + response.data["valid"])
-          })
-          .catch(e => {
-            console.log(e)
-          })
       }
 
 

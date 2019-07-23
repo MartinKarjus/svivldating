@@ -1,11 +1,13 @@
 <template>
   <div>
-    <h1>UserLoginRegister</h1>
+    <h1>LookingFor</h1>
     <button v-on:click="men">Men</button>
+    <br>
     <button v-on:click="women">Women</button>
+    <br>
     <button v-on:click="both">Both</button>
+    <br>
     <button v-on:click="back">back</button>
-    <router-link to="usernamepasswordemail">FirstRoute</router-link>
   </div>
 </template>
 

@@ -8,17 +8,31 @@ import Location from "@/components/registering/Location"
 import LookingFor from "@/components/registering/LookingFor"
 import UsernamePasswordEmail from "@/components/registering/UsernamePasswordEmail"
 import UserLoginRegister from "@/components/UserLoginRegister"
-
+import UserAgreement from "@/components/registering/UserAgreement"
+import AccCreated from "@/components/registering/AccCreated"
+import Home from "@/components/home/Home"
+import Browser from "@/components/browsing/Browser"
+import Colorgame from "@/components/content/Colorgame"
+import Quiz from "@/components/content/Quiz"
+import Matches from "@/components/browsing/Matches"
 
 Vue.use(Router);
 
 export default new Router({
   routes: [
-    /*{
-      path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
-    },*/
+    {
+      path: "matches",
+      name: "Matches",
+      component: Matches
+    },{
+      path: "colorgame",
+      name: "Colorgame",
+      component: Colorgame
+    },{
+      path: "quiz",
+      name: "Quiz",
+      component: Quiz
+    },
     {
       path: "/",
       name: "UserLoginRegister",
@@ -54,5 +68,25 @@ export default new Router({
       name: "UsernamePasswordEmail",
       component: UsernamePasswordEmail
     },
+    {
+      path: "useragreement",
+      name: "UserAgreement",
+      component: UserAgreement
+    },
+    {
+      path: "acccreated",
+      name: "AccCreated",
+      component: AccCreated
+    },
+    {
+      path: "home",
+      name: "Home",
+      component: Home
+    },
+    {
+      path: "browser",
+      name: "Browser",
+      component: Browser
+    }
   ]
 })

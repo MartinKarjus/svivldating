@@ -5,6 +5,8 @@ import App from './App'
 import router from './router'
 import Vuex from 'vuex'
 import storePlugin from "./storePlugin"
+import 'bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 //import Datepicker from 'vuejs-datepicker'
 
 Vue.config.productionTip = false

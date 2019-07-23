@@ -1,20 +1,32 @@
 <template>
-  <v-container text-xs-center>
-    <div>
-      <h1>Home</h1>
-      <div>
-        8
-      </div>
+
+  <div>
+    <h1>Home</h1>
+
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+      With Bootstrap!
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
     </div>
-  </v-container>
+
+    <div>
+      <button v-on:click="browse">Browse matches</button>
+    </div>
+  </div>
+
 </template>
 
 
 <script>
+  import router from '../../router'
+
   export default {
     name: "Home",
     methods: {
-
+      browse: function(event) {
+        router.push({name: "Browser"});
+      }
     }
   }
 </script>
