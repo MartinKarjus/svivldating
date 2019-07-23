@@ -2,12 +2,10 @@
   <div>
     <h1>I'm into:</h1>
     <button v-on:click="men" class="btn btn-info btn-lg">Men</button>
-    <br>
     <button v-on:click="women" class="btn btn-danger btn-lg">Women</button>
-    <br>
-    <button v-on:click="both" class="btn btn-lg btn ">Both</button>
-    <br>
-    <button v-on:click="back">back</button>
+    <button v-on:click="both" class="btn btn-lg btn btn-dark">Both</button>
+    <br><br>
+    <button v-on:click="back" class="btn btn-lg btn-outline-dark">back</button>
   </div>
 </template>
 
