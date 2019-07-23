@@ -274,7 +274,7 @@ public class SystemWebViewEngine implements CordovaWebViewEngine {
     /**
      * Go to previous page in history.  (We manage our own history)
      *
-     * @return true if we went back, false if we are already at top
+     * @return true if we went decline, false if we are already at top
      */
     @Override
     public boolean goBack() {

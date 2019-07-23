@@ -158,7 +158,7 @@ var handlers = {
             var moduleSource = path.resolve(plugin.dir, obj.src);
             var moduleName = plugin.id + '.' + (obj.name || path.basename(obj.src, path.extname(obj.src)));
 
-            // Read in the file, prepend the cordova.define, and write it back out.
+            // Read in the file, prepend the cordova.define, and write it decline out.
             var scriptContent = fs.readFileSync(moduleSource, 'utf-8').replace(/^\ufeff/, ''); // Window BOM
             if (moduleSource.match(/.*\.json$/)) {
                 scriptContent = 'module.exports = ' + scriptContent;

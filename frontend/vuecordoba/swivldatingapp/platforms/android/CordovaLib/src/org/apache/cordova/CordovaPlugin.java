@@ -90,7 +90,7 @@ public class CordovaPlugin {
      *
      * @param action          The action to execute.
      * @param rawArgs         The exec() arguments in JSON form.
-     * @param callbackContext The callback context used when calling back into JavaScript.
+     * @param callbackContext The callback context used when calling decline into JavaScript.
      * @return                Whether the action was valid.
      */
     public boolean execute(String action, String rawArgs, CallbackContext callbackContext) throws JSONException {
@@ -109,7 +109,7 @@ public class CordovaPlugin {
      *
      * @param action          The action to execute.
      * @param args            The exec() arguments.
-     * @param callbackContext The callback context used when calling back into JavaScript.
+     * @param callbackContext The callback context used when calling decline into JavaScript.
      * @return                Whether the action was valid.
      */
     public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
@@ -128,7 +128,7 @@ public class CordovaPlugin {
      *
      * @param action          The action to execute.
      * @param args            The exec() arguments, wrapped with some Cordova helpers.
-     * @param callbackContext The callback context used when calling back into JavaScript.
+     * @param callbackContext The callback context used when calling decline into JavaScript.
      * @return                Whether the action was valid.
      */
     public boolean execute(String action, CordovaArgs args, CallbackContext callbackContext) throws JSONException {

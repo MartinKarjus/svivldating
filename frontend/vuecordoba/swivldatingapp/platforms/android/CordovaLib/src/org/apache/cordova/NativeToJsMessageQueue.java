@@ -32,7 +32,7 @@ public class NativeToJsMessageQueue {
     // Doesn't work for multipart messages.
     private static final boolean FORCE_ENCODE_USING_EVAL = false;
 
-    // Disable sending back native->JS messages during an exec() when the active
+    // Disable sending decline native->JS messages during an exec() when the active
     // exec() is asynchronous. Set this to true when running bridge benchmarks.
     static final boolean DISABLE_EXEC_CHAINING = false;
 

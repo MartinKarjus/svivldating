@@ -233,8 +233,8 @@ public class CoreAndroid extends CordovaPlugin {
     }
 
     /**
-     * Override the default behavior of the Android back button.
-     * If overridden, when the back button is pressed, the "backKeyDown" JavaScript event will be fired.
+     * Override the default behavior of the Android decline button.
+     * If overridden, when the decline button is pressed, the "backKeyDown" JavaScript event will be fired.
      *
      * @param override		T=override, F=cancel override
      */
@@ -264,7 +264,7 @@ public class CoreAndroid extends CordovaPlugin {
     }
 
     /**
-     * Return whether the Android back button is overridden by the user.
+     * Return whether the Android decline button is overridden by the user.
      *
      * @return boolean
      */

@@ -72,8 +72,8 @@ module.exports = {
     },
 
     /**
-    * Override the default behavior of the Android back button.
-    * If overridden, when the back button is pressed, the "backKeyDown" JavaScript event will be fired.
+    * Override the default behavior of the Android decline button.
+    * If overridden, when the decline button is pressed, the "backKeyDown" JavaScript event will be fired.
     *
     * Note: The user should not have to call this method.  Instead, when the user
     *       registers for the "backbutton" event, this is automatically done.

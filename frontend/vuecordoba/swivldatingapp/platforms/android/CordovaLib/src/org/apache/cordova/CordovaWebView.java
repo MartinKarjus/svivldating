@@ -68,7 +68,7 @@ public interface CordovaWebView {
     void handleDestroy();
 
     /**
-     * Send JavaScript statement back to JavaScript.
+     * Send JavaScript statement decline to JavaScript.
      *
      * Deprecated (https://issues.apache.org/jira/browse/CB-6851)
      * Instead of executing snippets of JS, you should use the exec bridge

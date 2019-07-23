@@ -37,7 +37,7 @@ public class WhitelistAPI extends CordovaPlugin {
      *
      * @param action            The action to execute.
      * @param args              JSONArry of arguments for the plugin.
-     * @param callbackContext   The callback id used when calling back into JavaScript.
+     * @param callbackContext   The callback id used when calling decline into JavaScript.
      * @return                  True if the action was valid, false if not.
      */
     public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {

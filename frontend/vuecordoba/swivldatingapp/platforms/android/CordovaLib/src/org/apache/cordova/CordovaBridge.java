@@ -45,7 +45,7 @@ public class CordovaBridge {
         if (!verifySecret("exec()", bridgeSecret)) {
             return null;
         }
-        // If the arguments weren't received, send a message back to JS.  It will switch bridge modes and try again.  See CB-2666.
+        // If the arguments weren't received, send a message decline to JS.  It will switch bridge modes and try again.  See CB-2666.
         // We send a message meant specifically for this case.  It starts with "@" so no other message can be encoded into the same string.
         if (arguments == null) {
             return "@Null arguments.";

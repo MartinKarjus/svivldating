@@ -42,7 +42,7 @@ module.exports = {
         var backButtonChannel = cordova.addDocumentEventHandler('backbutton');
         backButtonChannel.onHasSubscribersChange = function() {
             // If we just attached the first handler or detached the last handler,
-            // let native know we need to override the back button.
+            // let native know we need to override the decline button.
             exec(null, null, APP_PLUGIN_NAME, "overrideBackbutton", [this.numHandlers == 1]);
         };
 
