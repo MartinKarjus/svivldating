@@ -9,9 +9,9 @@
     <h1>Your matches</h1>
 
 
-    <ul id="example-1" class="box2">
-      <li v-for="item in items">
-        <div class="container">
+    <ul id="example-1">
+      <li v-for="item in items" class="listcenter">
+        <div class="container box2">
           <div class="row">
             <div class="col-xs-6 box">
               <img
@@ -67,12 +67,16 @@
   }
   .rounded-borders {
     border-radius: 12px;
-    width: 150px;
-    height: 150px;
+    width: 15vh;
+    height: 15vh;
   }
   .box2 {
-    width: 500px;
-    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 25vh;
   }
 
 
